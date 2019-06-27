@@ -40,8 +40,8 @@
 		if ($result->num_rows > 0) {
     		// assign data of each row to variable to be used below
  		    while($row = $result->fetch_assoc()) {
-			$feedurl[] = $row["FeedUrl"]
-		    
+			$feedurl[] = $row["FeedUrl"];
+		 }   
 		} else {
 		    echo "0 results";
 		}
