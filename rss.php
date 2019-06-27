@@ -20,10 +20,37 @@
 			<p> Warhammer Community Last 5 RSS Posts </p>
 		</div>
 		<div class="Column middle">
+// connecting to database
+	 <?php
+		$servername = "35.242.182.228";
+		$username = "admin";
+		$password = "iamroot1";
+		$dbname = "RSSFeeds";
 
+		// Create connection
+		$conn = new mysqli($servername, $username, $password, $dbname);
+		// Check connection
+		if ($conn->connect_error) {
+		    die("Connection failed: " . $conn->connect_error);
+		}
+
+		$sql = "SELECT FeedName, FeedUrl FROM RSSFeeds";
+		$result = $conn->query($sql);
+
+		if ($result->num_rows > 0) {
+    		// assign data of each row to variable to be used below
+ 		    while($row = $result->fetch_assoc()) {
+				$row["FeedUrl"]=$feed
+		    }
+		} else {
+		    echo "0 results";
+		}
+		$conn->close();
+		?>
+// displaying feed results
     <?php
     	$rss = new DOMDocument();
-    	$rss->load('https://www.warhammer-community.com/feed/');
+    	$rss->load($feed);
     	$feed = array();
     	foreach ($rss->getElementsByTagName('item') as $node) {
     		$item = array ( 
