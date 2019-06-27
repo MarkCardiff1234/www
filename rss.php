@@ -10,7 +10,7 @@
 	<div class="topnav">
 	  <a href="index.php">Home</a>
 	  <a href="rss.php">RSS Reader App</a>
-
+          <a href="addfeed.php">Add Feeds Here</a>
 
 	</div>
 	
