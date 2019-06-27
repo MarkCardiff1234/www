@@ -17,7 +17,7 @@
 	
 	<div class="row">
 		<div class="column side">
-			<p> Warhammer Community Last 5 RSS Posts </p>
+			<p> Last 5 RSS Posts from your subscribed feeds. </p>
 		</div>
 		<div class="Column middle">
 // connecting to database

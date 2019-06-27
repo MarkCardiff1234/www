@@ -20,7 +20,7 @@
 
 <div class="row">
   <div class="column side">
-    <h2>ASIDE</h2>
+    <h2>Add your feeds here</h2>
    
 </div>
 
