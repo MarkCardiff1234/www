@@ -38,8 +38,8 @@ if($link === false){
 }
  
 // Escape user inputs for security
-$name = mysqli_real_escape_string($link, $_REQUEST['name']);
-$message = mysqli_real_escape_string($link, $_REQUEST['message']);
+$FeedName = mysqli_real_escape_string($link, $_REQUEST['FeedName']);
+$FeedUrl = mysqli_real_escape_string($link, $_REQUEST['FeedUrl']);
  
 // Attempt insert query execution
 $sql = "INSERT INTO Feeds (FeedName, FeedUrl) VALUES ('$FeedName', '$FeedUrl')";
