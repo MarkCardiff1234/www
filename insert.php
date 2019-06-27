@@ -30,7 +30,7 @@
 	<?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-$link = mysqli_connect("35.242.182.228", "admin", "iamroot1", "Feeds");
+$link = mysqli_connect("35.242.182.228", "admin", "iamroot1", "RSSFeeds");
  
 // Check connection
 if($link === false){

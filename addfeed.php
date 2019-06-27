@@ -30,7 +30,7 @@ Mark Cardiff<br>
 </div>
 
   <div class="column middle">
-    <h2>Guestbook</h2>
+    <h2>Add Feed Here</h2>
     <p>
 	<form action="insert.php" method="post">
     <p>
