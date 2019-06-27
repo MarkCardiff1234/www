@@ -32,11 +32,11 @@
 				<h1>Hello World!</h1>
 				<p>This website is running on Google Kubernetes Engine, using multiple pods 
 				deployed across a cluster. </p>
-				<h4>Attempting MySQL container connection from php...</h4>
+				<h4>Attempting MySQL pod connection from php...</h4>
 				<?php
-				$host = '35.242.182.228';
-				$user = 'admin';
-				$pass = 'iamroot1';
+				$host = 'db';
+				$user = 'root';
+				$pass = 'rootpassword';
 				$conn = new mysqli($host, $user, $pass);
 					if ($conn->connect_error) {
     						die("Connection failed: " . $conn->connect_error);
