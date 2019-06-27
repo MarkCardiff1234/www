@@ -34,7 +34,7 @@
 		    die("Connection failed: " . $conn->connect_error);
 		}
 
-		$sql = "SELECT FeedName, FeedUrl FROM RSSFeeds";
+		$sql = "SELECT FeedName, FeedUrl FROM Feeds";
 		$result = $conn->query($sql);
 
 		if ($result->num_rows > 0) {
