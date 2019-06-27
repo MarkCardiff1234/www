@@ -34,9 +34,9 @@
 				deployed across a cluster. </p>
 				<h4>Attempting MySQL container connection from php...</h4>
 				<?php
-				$host = 'db';
-				$user = 'root';
-				$pass = 'rootpassword';
+				$host = '35.242.182.228';
+				$user = 'admin';
+				$pass = 'iamroot1';
 				$conn = new mysqli($host, $user, $pass);
 					if ($conn->connect_error) {
     						die("Connection failed: " . $conn->connect_error);
