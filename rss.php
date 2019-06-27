@@ -40,7 +40,7 @@
 		if ($result->num_rows > 0) {
     		// assign data of each row to variable to be used below
  		    while($row = $result->fetch_assoc()) {
-				$row["FeedUrl"]=$feed
+			$feedurl[] = $row["FeedUrl"]
 		    }
 		} else {
 		    echo "0 results";
@@ -50,7 +50,7 @@
 // displaying feed results
     <?php
     	$rss = new DOMDocument();
-    	$rss->load($feed);
+    	$rss->load($feedurl);
     	$feed = array();
     	foreach ($rss->getElementsByTagName('item') as $node) {
     		$item = array ( 
