@@ -9,7 +9,7 @@
 	<body>
 
 		<div class="header">
-  			<h1>SAMPLE SERVER</h1>
+  			<h1>DEMO  SERVER</h1>
 		</div>
 
 		<div class="topnav">
